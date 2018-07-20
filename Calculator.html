@@ -1,0 +1,142 @@
+<html>
+	<head>
+			<title>Calculator</title>
+			<link rel="stylesheet" type="text/css" href="header.css" type="text/css">
+			<script type="text/javascript" >
+	//		var one = document.getElementById('1');
+	//		if(one){
+	//		one.addEventListener('click',function(){
+	//			Calculator.view.value=Calculator.view.value+1;
+	//			console.log(Calculator);
+	//		});
+	//	}
+			var disp = function display(x) {
+				Calculator.view.value=Calculator.view.value+x;
+			}
+
+			function clean() {
+				Calculator.view.value="";
+			}
+			var root = function sqroot(x) {
+				Calculator.view.value=Math.sqrt(x);
+			}
+			window.onkeypress =  zx;
+			function zx(e){
+			e.preventDefault();
+			switch(e.key){
+				case 'Enter':
+					Calculator.view.value = eval(Calculator.view.value);
+					break;
+				case '1':
+					Calculator.view.value = Calculator.view.value+'1';
+					break;
+				case '2':
+					Calculator.view.value = Calculator.view.value+'2';
+					break;
+				case '3':
+					Calculator.view.value = Calculator.view.value+'3';
+					break;
+				case '4':
+					Calculator.view.value = Calculator.view.value+'4';
+					break;
+				case '5':
+					Calculator.view.value = Calculator.view.value+'5';
+					break;
+				case '6':
+					Calculator.view.value = Calculator.view.value+'6';
+					break;
+				case '7':
+					Calculator.view.value = Calculator.view.value+'7';
+					break;
+				case '8':
+					Calculator.view.value = Calculator.view.value+'8';
+					break;
+				case '9':
+					Calculator.view.value = Calculator.view.value+'9';
+					break;
+				case '0':
+					Calculator.view.value = Calculator.view.value+'0';
+					break;
+				case '+':
+					Calculator.view.value = Calculator.view.value+'+';
+					break;
+				case '-':
+					Calculator.view.value = Calculator.view.value+'-';
+					break;
+				case '*':
+					Calculator.view.value = Calculator.view.value+'*';
+					break;
+				case '/':
+					Calculator.view.value = Calculator.view.value+'/';
+					break;
+				case 'Escape':
+					Calculator.view.value = "";
+			}
+			}
+			document.onkeydown = zx;
+
+			//function math(x) {
+				//Calculator.view.value=cos(x)
+			//}
+			</script>
+
+	</head>
+	<body>
+		<div class="Heading">
+			<h1>Calculator</h1>
+			<h3>Using javascript</h3>
+		</div>
+		<div class="Digits">
+			<form name="Calculator">
+				<table class="table" name="table" align="center" style="float: center">
+					<th>
+
+					</th>
+					<tr>
+						<td><input class="button" name="" type="button" value="C" onclick="clean()"></td>
+						<td><input class="display" type="textbox" name="view" id="view" disabled style="margin: 0px;height: 40px;align-content: center;"></td>
+					</tr>
+					<tr>
+						<td><input class="button"   id="1" name="1" type="button" value="1" onclick="disp(this.value)"></td>
+						<td><input class="button"   id="2" name="2" type="button" value="2"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="3" name="3" type="button" value="3"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="add" name="add" type="button" value="+"; onclick="disp(this.value)"></td>
+					</tr>
+					<tr>
+						<td><input class="button"   id="4" name="4" type="button" value="4"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="5" name="5" type="button" value="5"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="6" name="6" type="button" value="6"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="sub" name="sub" type="button" value="-"; onclick="disp(this.value)"></td>
+					</tr>
+					<tr>
+						<td><input class="button"   id="7" name="7" type="button" value="7"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="8" name="8" type="button" value="8"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="9" name="9" type="button" value="9"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="mul" name="mul" type="button" value="*"; onclick="disp(this.value)"></td>
+					</tr>
+					<tr>
+						<td><input class="button"   id="0" name="0" type="button" value="0"; onclick="disp(this.value)"></td>
+						<td><input class="button"   id="dot" name="dot" type="button" value="." onclick="disp(this.value)"></td>
+						<td><input class="button"   id="eq" name="eq" type="button" value="=" onclick="view.value=eval(view.value)"></td>
+						<td><input class="button"   id="div" name="div" type="button" value="/"; onclick="disp(this.value)"></td>
+					</tr>
+				</table>
+				<table class="table_sci" align="right" style="float:center;">
+					<tr>
+						<td><input class="sci-calc" name="" type="button" value="sqrt" onclick="root(Calculator.view.value)"></td>
+						</tr>
+					<tr>
+						</tr>
+					<tr>
+						</tr>
+					<tr>
+						</tr>
+					<tr>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<footer>This is Developed by Nithin Katakam</footer>
+
+	</body>
+</html>

@@ -1,0 +1,77 @@
+td{
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	outline-width: 25px;
+}
+html{
+	background: #100a1c;
+  	background-image:
+    	radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    	radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+	background-attachment: fixed;
+	color: #6cacc5;
+}
+
+body {
+  	color: #6cacc5;
+  	font: 300 18px/1.6 "Source Sans Pro",sans-serif;
+  	margin: 0;
+  	padding: 5em 0 2em;
+  	text-align: center;
+  	table-layout: block;
+}
+form{
+	text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+	font-family: monospace;
+}
+
+.button{
+	padding: 10px 20px 10px 20px;
+	width: 40px;
+	border-radius: 5px;
+	margin: 5px;
+}
+table{
+	padding: 0px;
+}
+.sci-calc{
+	width: 50px;
+}
+.clear{
+	margin-right: 3px;
+}
+.display{
+margin: 0px;
+width: 156px;
+height: 40px;
+text-align: end;
+align-content: initial;
+border-radius: 5px;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 15pt;
+}
+footer{
+	clear: both;
+	background: black;
+	height: 25px;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-family: Lucida calligraphy;
+	font-size: 8pt;
+	bottom: auto;
+}
+.table_sci{
+	margin-right: 450px;
+	margin-top: -257px;
+}
+.table{
+	margin-left: 450px;
+}
